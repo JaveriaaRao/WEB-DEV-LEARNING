@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            height: 100%;
+           min-height: 640px;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(222,237,255,1) 100%);
+            display:flex;
+            justify-content: center;
+            align-items:center;
+           
+
+        }
+        .card{
+            height: 550px;
+            width: 400px;
+            background-color: white;
+            border-radius:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:20px;
+            
+
+
+        }
+      .card img{
+           width: 400px;
+           border-top-left-radius: 20px;
+           border-top-right-radius: 20px;
+        }
+      .card h2{
+       font-weight: bold;
+       font-size: 1.5rem;
+      }  
+      .card p{
+        justify-content: center;
+        font-size: 1.2em;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+    .box{
+      width: 350px;
+      height: 60px;
+      background-color: aqua;
+     display: flex;
+     flex-direction: row;
+     border-radius: 15px;
+     padding: 10px;
+     justify-content: space-between;
+     padding-right: 20px;
+     padding-left: 20px;
+     
+     
+    }
+    #leftbox{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+     #imgbox img
+     {
+      width: 50px;
+      height: 40px;
+     }
+     .textbox p{
+      font-size: 1.2rem;
+      display: flex;
+      flex-direction: column;
+     }
+    .rightbox{
+      width: 100px;
+      height: 50px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      
+    }
+    
+   .lastbox{
+    width: 350px;
+    height: 50px;
+    background-color:#03166d94;
+    border-radius: 15px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    
+   }
+   .cancelbox a{
+    /* if we do not want to see the underline in anchor tag */
+    text-decoration: none;
+    color: rgb(46, 40, 40);
+    font-weight: bold;
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+    <img src="image.jpg" alt="image is here broo!">
+
+    <h2>
+        Order Summary
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, fugit.
+    </p>
+        <div class="box">
+           
+            <div id="leftbox">
+              <div id="imgbox">
+                <img src="image2.png" alt="music icon">
+              </div>
+              <div class="textbox">
+                <p>Amount</p>
+                <p>$99.90</p>
+              </div>
+            </div>
+
+          <div class="rightbox">
+            <a href="#">change</a>
+          </div>
+           
+
+        </div>
+         <div class="lastbox">
+           Proceed to Payment
+         </div>
+        <div class="cancelbox">
+          <a href="
+          #">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
