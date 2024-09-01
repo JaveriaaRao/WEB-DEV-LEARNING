@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.bodyContainer{
+    /* background: rgb(208,227,219);
+    background: radial-gradient(circle, rgba(208,227,219,1) 0%, rgba(132,176,222,1) 100%); */
+
+    background: rgb(253,255,254);
+    background: radial-gradient(circle, rgba(253,255,254,1) 0%, rgba(132,176,222,1) 100%);
+}
+.Container{
+    max-width:66vw;
+    /* max-height: 50vh; */
+    /* top bottom padding and left right padding */
+    padding:2rem 1rem ;
+    /* left right in center */
+    margin:0 auto ;
+   
+
+}
+.headerContainer{
+     margin-bottom: 2.8rem;
+}
+.title{
+    margin: 1rem;
+    font-size:3rem ;
+    line-height: 1.7rem;
+    font-weight:800;
+    text-align:center ;
+
+}
+.desc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(133, 119, 119);
+    margin: 0 auto;
+
+}
+.mainCon{
+    display: grid;
+    gap:1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(100px,257px));
+    justify-content: center;
+}
+/* @media(min-width:935px)
+{
+    .mainCon{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:1080px)
+{
+    .mainCon{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width:1380px)
+{
+    .mainCon{
+        grid-template-columns: repeat(4,1fr);
+    }
+} */
+.cardCon{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid rgb(214, 205, 205);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.imgCon
+{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+@media(min-width:768px){
+    .imgCon
+{
+    height: 12rem;
+}
+}
+.cardImg{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cardTitlecon{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+.cardCon:hover .cardImg{
+  transform: scale(1.1);
+  transition-duration: 200ms;
+
+}
+.cardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(27, 25, 25);
+    line-height:1.5rem;
+    margin-bottom: 0.3rem;
+}
+ .cartitleAn:hover .cardtitle {
+    color: rgb(52, 52, 207);
+}
+.cardDesc{
+    color: rgb(116, 106, 106);
+    font-size:1rem;
+}
+.cardFootercon{
+   display: flex;
+   justify-content: space-between;
+   padding: 0  1.5rem;
+   padding-bottom: 1.5rem;
+   align-items: flex-end;
+
+}
+.authorcon{
+    display: flex;
+    align-items:center;
+    gap: 0.5rem;
+}
+.authorAvatarcon{
+    height:2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(153, 148, 148);
+    border-radius: 50%;
+    background-color: rgb(165, 158, 158);
+    
+
+}
+.authorinfocon{
+    display: flex;
+    flex-direction: column;
+}
+.authorN{
+   color: rgb(33, 33, 179); 
+
+}
+.authorD{
+    color: rgb(134, 61, 61);
+}
+.cardTagcon{
+    font-size: 0.79rem;
+    border:1px solid rgb(77, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.25rem;
+    color: gray;
+
+}
